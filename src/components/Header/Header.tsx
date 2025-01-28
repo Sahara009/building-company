@@ -64,6 +64,7 @@ export const Header: React.FC = () => {
       </Container>
 
       <Drawer
+        style={{ background: "black" }}
         anchor="right"
         open={drawerOpen}
         onClose={toggleDrawer(false)}

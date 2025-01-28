@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap");
+
+.header__container {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+  padding: 15px 0px;
+  overflow: hidden;
+}
+.header {
+  .burger {
+    display: none;
+  }
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .logo {
+    display: flex;
+    align-items: center;
+    img {
+      width: 100%;
+      max-width: 30px;
+    }
+    h4 {
+      font-size: 24px;
+      font-weight: 700;
+    }
+  }
+
+  .link {
+    font-family: "Noto Sans JP", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-size: 18px;
+    font-style: normal;
+    color: white;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+
+    &:hover {
+      color: rgb(255, 170, 0);
+    }
+  }
+  .left {
+    display: flex;
+    gap: 20px;
+  }
+  .right {
+    display: flex;
+    gap: 20px;
+  }
+}
+@media (max-width: 700px) {
+  .header {
+    .burger {
+      display: flex;
+    }
+    .right {
+      display: none;
+    }
+    .left {
+      display: none;
+    }
+  }
+}
+.drawer-paper {
+  color: #ffffff;
+  width: 220px;
+  padding: 20px;
+
+  .link {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    transition: color 0.3s;
+    margin-bottom: 5px;
+
+    &:hover {
+      color: #ff9900;
+    }
+  }
+}
+.css-y7ab46-MuiPaper-root-MuiDrawer-paper {
+  background-color: rgb(27, 27, 27) !important;
+}
+.css-cfq8qh-MuiListItemText-root {
+  margin-bottom: 7px !important;
+}

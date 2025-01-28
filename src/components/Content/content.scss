@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap");
+
+.content {
+  margin-top: 30px;
+  .description {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+
+    gap: 20px;
+
+    .title {
+      width: 60%;
+
+      h1 {
+        font-family: "Noto Sans TC", serif;
+        text-transform: uppercase;
+        font-size: 4rem;
+        font-weight: 600;
+        font-style: normal;
+        line-height: 4.5rem;
+      }
+    }
+    .text {
+      h2 {
+        font-family: "Noto Sans TC", serif;
+        text-transform: uppercase;
+        font-size: 2rem;
+        font-weight: 600;
+        font-style: normal;
+        margin-bottom: 5px;
+      }
+      p {
+        font-family: "Noto Sans TC", serif;
+
+        font-size: 1rem;
+        font-weight: 400;
+        font-style: normal;
+        color: gray;
+      }
+      max-width: 40%;
+    }
+  }
+}
+
+.background-video {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  margin-bottom: 30px;
+  border-radius: 9px;
+
+  &__content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+  }
+
+  &__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+    z-index: 1;
+    padding: 20px;
+    // object-fit: contain;
+
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 1.5rem;
+    }
+  }
+}
+@media (max-width: 980px) {
+  .content {
+    h1 {
+      font-size: 1.8rem !important;
+      line-height: 3rem !important;
+    }
+  }
+}
+@media (max-width: 700px) {
+  .content {
+    .description {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 30px;
+      margin: 0 auto;
+
+      .title {
+        width: 100%;
+        text-align: center;
+      }
+      .text {
+        max-width: 100%;
+        margin-bottom: 40px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 700px) {
+  .background-video {
+    height: 200px; // Фиксированная высота для мобильных экранов
+
+    video {
+      height: 100%; // Видео полностью вписывается в высоту контейнера
+      object-fit: cover; // Чтобы видео занимало весь контейнер
+    }
+  }
+}

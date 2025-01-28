@@ -64,6 +64,11 @@
   }
 }
 .drawer-paper {
+  background-color: black !important; /* Синий фон для Drawer */
+  color: white; /* Белый текст */
+}
+
+.drawer-paper {
   color: #ffffff;
   width: 220px;
   padding: 20px;

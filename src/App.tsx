@@ -3,6 +3,7 @@ import { Header, Content, WhyUs, About, Footer } from "./components/index";
 import { FAQ } from "./components/FAQ/FAQ";
 
 //--legacy-peer-deps
+// git push --force origin main
 
 const App: React.FC = () => {
   return (
